@@ -25,6 +25,11 @@ public class ValidateUserInfo {
         checkPattern(regex, mobNum);
     }
 
+    public void password(String pswrd) {
+        //regex pattern
+        String regex = "^[a-zA-Z]{8,}$";
+        checkPattern(regex, pswrd);
+    }
 
         //check regex pattern and input
         public void checkPattern (String regexPattern, String userInput){
