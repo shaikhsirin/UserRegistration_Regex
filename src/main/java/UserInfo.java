@@ -10,7 +10,15 @@ public class UserInfo {
 
         //call firstName method in Validate class
         validateInfo.firstName(firstName);
-        sc.close();
+
+    }
+    public void userLastName() {
+        //taking user input
+        System.out.println("Enter Your Last Name : ");
+        String lastName = sc.next();
+
+        //call firstName method in Validate class
+        validateInfo.lastName(lastName);
     }
 }
 
