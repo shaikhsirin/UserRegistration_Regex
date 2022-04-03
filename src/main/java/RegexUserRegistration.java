@@ -5,5 +5,10 @@ public class RegexUserRegistration {
 
         //calling method in UserInfo class
         userInfo.userFirstName();
+        System.out.println("==================");
+
+        //calling method in UserInfo class
+        userInfo.userLastName();
+        System.out.println("==================");
     }
 }

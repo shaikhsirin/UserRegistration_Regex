@@ -1,11 +1,18 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 public class ValidateUserInfo {
     public void firstName(String firstName){
         //regex pattern
         String regex = "^[A-Z]{1}[a-z]{2,}$";
         checkPattern(regex, firstName);
     }
+    public void lastName(String lastName){
+        //regex pattern
+        String regex = "^[A-Z]{1}[a-z]{2,}$";
+        checkPattern(regex, lastName);
+    }
+
 
     //check regex pattern and input
     public void checkPattern(String regexPattern, String userInput) {
