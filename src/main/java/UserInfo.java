@@ -40,5 +40,14 @@ public class UserInfo {
         //call firstName method in Validate class
         validateInfo.mobNum(mobileNum);
     }
+
+    public void userPassword() {
+        //taking user input
+        System.out.println("Enter Your Password : ");
+        String passWord = sc.next();
+
+        //call firstName method in Validate class
+        validateInfo.password(passWord);
+    }
 }
 

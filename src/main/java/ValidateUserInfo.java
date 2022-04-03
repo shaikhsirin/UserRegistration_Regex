@@ -24,12 +24,12 @@ public class ValidateUserInfo {
         String regex = "^[0-9]{1,3}-[0-9]{10}$";
         checkPattern(regex, mobNum);
     }
-
     public void password(String pswrd) {
         //regex pattern
-        String regex = "^[a-zA-Z]{8,}$";
+        String regex = "^[a-z](?=.*[A-Z]).{8,}$";
         checkPattern(regex, pswrd);
     }
+
 
         //check regex pattern and input
         public void checkPattern (String regexPattern, String userInput){
