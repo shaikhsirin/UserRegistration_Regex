@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class UserInfo {
     Scanner sc = new Scanner(System.in);
     ValidateUserInfo validateInfo = new ValidateUserInfo();
@@ -12,6 +13,7 @@ public class UserInfo {
         validateInfo.firstName(firstName);
 
     }
+
     public void userLastName() {
         //taking user input
         System.out.println("Enter Your Last Name : ");
@@ -19,6 +21,24 @@ public class UserInfo {
 
         //call firstName method in Validate class
         validateInfo.lastName(lastName);
+    }
+
+    public void userEmailId() {
+        //taking user input
+        System.out.println("Enter Your Email : ");
+        String emailID = sc.next();
+
+        //call firstName method in Validate class
+        validateInfo.emailId(emailID);
+    }
+
+    public void userMobNum() {
+        //taking user input
+        System.out.println("Enter Your Mobile Number : ");
+        String mobileNum = sc.next();
+
+        //call firstName method in Validate class
+        validateInfo.mobNum(mobileNum);
     }
 }
 
