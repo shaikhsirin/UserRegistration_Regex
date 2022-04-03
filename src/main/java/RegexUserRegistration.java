@@ -3,12 +3,19 @@ public class RegexUserRegistration {
         //created user info object
         UserInfo userInfo = new UserInfo();
 
-        //calling method in UserInfo class
+        //calling method in UserInfo class to validate first name
         userInfo.userFirstName();
         System.out.println("==================");
 
-        //calling method in UserInfo class
+        //calling method in UserInfo class to validate last name
         userInfo.userLastName();
         System.out.println("==================");
+
+        //calling method in UserInfo class to validate email
+        userInfo.userEmailId();
+        System.out.println("==================");
+        //calling method in UserInfo class to validate email
+        userInfo.userMobNum();
+        System.out.println("==================");
     }
-}
+    }
