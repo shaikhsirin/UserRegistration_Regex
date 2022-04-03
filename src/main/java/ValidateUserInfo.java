@@ -26,7 +26,7 @@ public class ValidateUserInfo {
     }
     public void password(String pswrd) {
         //regex pattern
-        String regex = "^[a-z](?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        String regex = "^[a-z](?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).{8,}$";
         checkPattern(regex, pswrd);
     }
 
